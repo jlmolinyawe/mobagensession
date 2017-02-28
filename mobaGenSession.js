@@ -12,4 +12,4 @@ for (var i in ipList) {
 
 if (process.argv[2]) header = header.replace('APPLICATION', process.argv[2]);
 
-fs.writeFileSync('MobaXterm Sessions.mxtsessions', header + '\n' + ipList, 'utf8');
+fs.writeFileSync('MobaXterm Sessions.mxtsessions', header + '\n' + ipList.join('\n'), 'utf8');
